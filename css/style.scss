@@ -1,0 +1,210 @@
+@use "./sass/layout" as *;
+
+@include layout;
+
+
+
+    .left-header{
+         a{
+        width: 60px;
+        margin: 0px 20px;
+        line-height: 80px;
+        font-size: 1.5rem;
+        font-style: italic;
+        span{
+            color: #0ee3a2 ;
+            &:hover{
+                opacity: .5;
+            }
+        }
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    }
+    .userName{
+        font-size: 1.2rem;
+        line-height: 80px;
+        text-transform: uppercase;
+        font-style: italic;
+        color: #205bd8af;
+        font-size: 1.5rem;
+    }
+   .right-header{
+    display: flex;
+        .login ul{
+         margin-right: 20px;
+         margin-top: 10px; 
+        li{
+            display: inline-block;
+            margin: 0px 10px;
+            font-size: 1.3rem;
+        }
+        
+    }
+
+    .user{
+        margin: 25px 0px;
+        .cart-box{
+            display: none;
+            position: relative;
+            width: 150px;     
+            color: #007bff;
+            background-color: #ddd;
+            text-align: center;
+            font-size: 1.2rem;
+            user-select: none;
+            .cart-btn{
+                 cursor: pointer;
+                 width: 100%;
+                 position: relative;
+               
+                 .arrow{
+                    color: rgb(138, 137, 137) !important;
+                 }
+                 #number{
+                    position: absolute;
+                    border-radius: 80%;
+                    padding: .5px;
+                    font-size: 1rem;
+                    margin-left: -55px;
+                    margin-top: 10px;
+                 }
+                 i{
+                    font-size: 1.5rem;
+                 }
+                }
+
+                .cart{
+                    display: none;
+                    position: absolute;
+                    right: 0%;
+                    margin-top: 20px;
+                    background-color: #ddd;
+                    border-radius: 0 0 10px 10px;
+                    width: 300px;
+                    z-index: 1;
+                ul{ 
+                    margin: 25px 0px;
+                     li{
+                        display: block;
+                        margin: 10px;
+                        font-size: 1.2rem;
+                        background-color: #ffff;
+                        border-radius: 5px;
+                        span{
+                             border-radius: 5px;
+                              padding: 10px;
+                        }
+                        a{
+                            text-decoration: none;
+                            i{
+                            font-size: .8rem;
+                            border-radius: 5px;
+                            padding: 5px;
+                            line-height: 20px;
+                            &:hover{
+                                opacity: .7;
+                            }
+                        }
+                        }
+                      
+                    }
+                }
+                   
+                }
+            }
+    }
+    .logout-box{
+        margin-right: 30px;
+        .logout{
+        text-transform:capitalize;
+        font-size: 1.3rem !important;
+        line-height: 80px;
+        letter-spacing: 1px;
+        }
+
+    }
+ 
+   }
+
+
+
+
+.search-box{
+    display: flex;
+    width: 90%;
+    margin: 15px auto;
+}
+
+.row{
+    justify-content: space-evenly;
+    width: 100%;
+    .card{
+        transition: .5s;
+      
+        &:hover{
+            border: 1px solid #007bff;
+            transform: translateY(-5px);
+        }
+        .btn-danger{
+        display: none;
+        transition: .4s;
+    }
+    .btn-primary{
+        transition: .4s;
+    }
+    }
+  
+    }
+
+.fa-heart{
+    color: rgb(185, 184, 184);
+}
+#favouriteItems  li{
+    display: flex;
+    justify-content: space-between;
+    .plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    .userName{
+        display: none;
+    }
+    .right-header{
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        .login ul{
+            margin-right: 0px; 
+            margin-top: -20px;
+            text-align: center;
+           li{
+               display: block;
+               margin: 15px 0px;
+               font-size: 1.2rem;
+           }
+           
+       }
+    }
+    .logout-box{
+        margin-right: 10px !important;
+        .logout{
+        font-size: 1.2rem !important;
+        }
+
+    }
+    .user{
+        margin-top: 0 !important;
+        margin-right: -20px !important;
+    }
+    .row{
+        margin: 0 !important;
+    }
+    }
+
+

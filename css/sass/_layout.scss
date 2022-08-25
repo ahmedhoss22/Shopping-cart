@@ -1,0 +1,14 @@
+@mixin layout {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        user-select: none;
+    }
+    body{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+    
+}
