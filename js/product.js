@@ -137,6 +137,19 @@ function size(){
 }
 size()
 
+let minus=document.querySelectorAll('.fa-minus')
+let plus=document.querySelectorAll('.plus')
+console.log(minus,plus)
 
+minus.forEach(ele=>{
+    ele.addEventListener('click',(e)=>{
+        e.preventDefault();
+    })
+})
+plus.forEach(ele=>{
+    ele.addEventListener('click',(e)=>{
+        e.preventDefault();
+    })
+})
 
 
